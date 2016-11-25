@@ -54,6 +54,12 @@ class PHPLatexer
 \end{figure}
 ';
   }
+  public function addCustom($text)                                              
+  {                                                                             
+    $this->document .= '                                                        
+'.$text.'                                                                       
+';                                                                              
+  }                                                                             
   public function put()
   {
     file_put_contents($this->document_name.'.tex',$this->document);
