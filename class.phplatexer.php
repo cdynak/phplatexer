@@ -47,11 +47,9 @@ class PHPLatexer
   public function addVerbatim($text)
   {
     $this->document .= '
-\begin{figure}
-  \begin{verbatim}
+\begin{verbatim}
 '.$text.'
-  \end{verbatim}
-\end{figure}
+\end{verbatim}
 ';
   }
   public function addCustom($text)                                              
