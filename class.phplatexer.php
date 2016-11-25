@@ -60,7 +60,7 @@ class PHPLatexer
   }
   public function compile()
   {
-    exec('/usr/share/texmf/bin/pdflatex '.$this->document_name.'.tex');
+    exec('pdflatex '.$this->document_name.'.tex');
   }
   public function make()
   {
